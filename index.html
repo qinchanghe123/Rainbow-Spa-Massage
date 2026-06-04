@@ -352,26 +352,59 @@
     }
 
     .booking {
-      background: linear-gradient(135deg, #222, #111);
+      position: relative;
+      overflow: hidden;
       color: #fff;
       text-align: center;
+      background: #6d4d2a;
+    }
+
+    .booking::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url("https://i.pinimg.com/736x/d5/b3/11/d5b31102c52f5fc052e1857bec0e652b.jpg");
+      background-size: cover;
+      background-position: center;
+      z-index: 0;
+      transform: scale(1.03);
+    }
+
+    .booking::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(36, 24, 12, 0.38);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      z-index: 0;
+    }
+
+    .booking > * {
+      position: relative;
+      z-index: 1;
     }
 
     .booking .section-title {
       color: #fff;
+      text-shadow: 0 3px 18px rgba(0, 0, 0, 0.45);
     }
 
     .booking .section-subtitle {
-      color: #ddd;
+      color: rgba(255, 255, 255, 0.92);
+      text-shadow: 0 3px 16px rgba(0, 0, 0, 0.4);
     }
 
     .booking-box {
       max-width: 780px;
       margin: auto;
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.16);
+      background: rgba(255, 255, 255, 0.18);
+      border: 1px solid rgba(255, 255, 255, 0.34);
       border-radius: 30px;
       padding: 42px;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.26);
     }
 
     .booking-phone {
@@ -379,6 +412,7 @@
       font-weight: 800;
       color: #ffd36a;
       margin: 20px 0;
+      text-shadow: 0 3px 16px rgba(0, 0, 0, 0.36);
     }
 
     .testimonials {
@@ -483,19 +517,51 @@
     }
 
     .contact-info {
-      background: #222;
+      position: relative;
+      overflow: hidden;
       color: #fff;
       border-radius: 28px;
       padding: 38px;
+      background: #6d4d2a;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.16);
+    }
+
+    .contact-info::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url("https://i.pinimg.com/736x/cc/01/7a/cc017a085f6ba3dd97957ccbeccf80e0.jpg");
+      background-size: cover;
+      background-position: center;
+      z-index: 0;
+      transform: scale(1.04);
+    }
+
+    .contact-info::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(35, 24, 14, 0.42);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      z-index: 0;
+    }
+
+    .contact-info > * {
+      position: relative;
+      z-index: 1;
     }
 
     .contact-info h3 {
       font-size: 28px;
       margin-bottom: 22px;
+      color: #fff;
+      text-shadow: 0 3px 16px rgba(0, 0, 0, 0.42);
     }
 
     .contact-item {
       margin-bottom: 22px;
+      text-shadow: 0 3px 16px rgba(0, 0, 0, 0.35);
     }
 
     .contact-item span {
